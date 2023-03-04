@@ -1,3 +1,17 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-toggler {
+    display: inline-block;
+    float: right;
+}
+
+.navigation {
+    padding: 10px;
+}
+
 .shop {
     margin: 50px;
 }
@@ -23,7 +37,7 @@
 
 .hero button {
     width: 150px;
-    margin-top: 50px;
+    margin-top: 10px;
     align-self: center;
 }
 
@@ -58,7 +72,8 @@
     align-items: flex-end;
 }
 
-.accordion-content.active {
+
+.open {
     height: 0;
     display: none;
 }
