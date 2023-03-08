@@ -1,10 +1,21 @@
 //const accordionBtn = document.getElementsByClassName('accordion-button')[0];
-const accordionContent = document.getElementsByClassName('accordion-content')[0];
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-const expandAccordion = () => {
-    accordionContent.classList.toggle('open');
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
 }
 
+
+//Navbar scripts
 const navbar = document.getElementsByClassName('navbar-collapse')[0];
 
 
