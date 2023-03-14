@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Document</title>
 </head>
 
 <body>
   <div class="navigation">
-    <nav class="navbar">
-      <div class="container">
-        <a class="navbar-brand" href="#">Forest Brewery House</a>
-        <button class="navbar-toggler" type="button" onclick="expandNavbar()">
-          <span class="navbar-toggler-icon">  -  </span>
-        </button>
-        <div class="navbar-collapse open" id="navbarNav">
+        <div class="navbar-top">
+          <a class="navbar-brand" href="#">Forest Brewery House</a>
+          <span class="material-symbols-outlined" id="menu">
+            menu
+          </span>
+        </div>  
+        <div class="navbar-collapse open" id="navbar-menu-items">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -32,8 +35,6 @@
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
   </div>
 
   <div class="hero">
@@ -80,32 +81,32 @@
 
   <br>
 
-    <div class="footer">
-      <div id="accordian-container">
-        <button class="accordion">About</button>
-        <div class="panel">
-          <p>Lorem ipsum...</p>
-        </div>
-
-        <button class="accordion">Contact Us</button>
-        <div class="panel">
-          <p>Lorem ipsum...</p>
-        </div>
-
-        <button class="accordion">Section 3</button>
-        <div class="panel">
-          <p>Lorem ipsum...</p>
-        </div>
-      </div>  
-
-      <div id="socials">
-          <ul class="socials">
-            <li><a href="www.google.com">twitter</a></li>
-            <li><a href="www.google.com">facebook</a></li>
-            <li><a href="www.google.com">instagram</a></li>
-          </ul> 
+  <div class="footer">
+    <div id="accordian-container">
+      <button class="accordion">About</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
       </div>
+
+      <button class="accordion">Contact Us</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion">Section 3</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+    </div>  
+
+    <div id="socials">
+      <ul class="socials">
+        <li><a href="www.google.com">twitter</a></li>
+        <li><a href="www.google.com">facebook</a></li>
+        <li><a href="www.google.com">instagram</a></li>
+      </ul> 
     </div>
+  </div>
 
   <div id="basket">
 

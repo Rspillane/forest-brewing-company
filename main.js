@@ -16,9 +16,14 @@ for (i = 0; i < acc.length; i++) {
 
 
 //Navbar scripts
-const navbar = document.getElementsByClassName('navbar-collapse')[0];
+const navbar = document.getElementById('navbar-menu-items');
 
 
 const expandNavbar = () => {
     navbar.classList.toggle('open');
+    console.log('menu should open');
 }
+
+const navbarMenu = document.getElementById('menu');
+
+navbarMenu.addEventListener('click', expandNavbar);

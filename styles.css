@@ -1,3 +1,4 @@
+/*------------------------  GLOBALS -----------------*/
 body {
     margin: 0;
 }
@@ -5,17 +6,49 @@ a {
     text-decoration: none;
     color: black;
 }
-
-.navbar-toggler {
-    display: inline-block;
-    float: right;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
+/* ----------------- NAVBAR --------------------*/
 .navigation {
     padding: 10px;
-    flex-grow: 1;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
+.navbar-top {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar-brand {
+    flex-grow: 4;
+}
+
+
+.nav-item {
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.navbar-collapse {
+    height: auto;
+}
+
+.open {
+    height: 0;
+    display: none;
+}
+
+
+/*-------------------------- HERO ---------------------*/
 .shop {
     margin: 50px;
 }
@@ -44,12 +77,14 @@ a {
     margin-top: 10px;
     align-self: center;
 }
+/* ------------------- INTRO ----------------*/
 
 .intro {
     margin-inline: 50px;
     text-align: center;
     font-size: 18px;
 }
+
 
 .cta {
     margin-inline: 20%;
@@ -64,6 +99,7 @@ a {
     width: 500px;
 }
 
+/* ------------------- ITEM CARDS ----------------*/
 .card {
     background-color: aqua;
 }
@@ -77,12 +113,9 @@ a {
 }
 
 
-.open {
-    height: 0;
-    display: none;
-}
 
 
+/* ---------------- ACCORDION ------------------ */
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #eee;
