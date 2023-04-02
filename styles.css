@@ -13,6 +13,11 @@ ul {
 }
 
 /* ----------------- NAVBAR --------------------*/
+#nav-logo {
+    margin-left: -25px;
+    height: 60px;
+}
+
 .navigation {
     padding: 10px;
     height: auto;
@@ -25,11 +30,12 @@ ul {
 .navbar-top {
     display: flex;
     align-items: center;
+    
 }
 
-
-.navbar-brand {
-    flex-grow: 4;
+#menu {
+    width: 100%;
+    float: right;
 }
 
 
@@ -58,7 +64,7 @@ ul {
 }
 
 .hero-background-image {
-    height: 500px;
+    width: 100%;
     /*transform: translateX(-18%);*/
 }
 
@@ -68,8 +74,9 @@ ul {
     flex-direction: column;
     justify-content: center;
     margin-inline: 20%;
-    top: 40%;
+    transform: translateY(-250px);
     color: white;
+    display: none;
 }
 
 .hero button {
@@ -100,16 +107,74 @@ ul {
 }
 
 /* ------------------- ITEM CARDS ----------------*/
-.card {
-    background-color: aqua;
-}
-.card-img-overlay {
-    display: flex;
-    flex-direction: column;
+
+/* MOBILE ONLY FORMAT */
+@media screen and (max-width: 800px) {
+    .card-container {
+        padding-block: 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
 }
 
-.card-btn {
-    align-items: flex-end;
+/* WEB ONLY FORMAT */
+@media screen and (min-width: 800px) {
+    .card-container {
+        padding: 30px;
+        column-gap: 20px;
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 220px;
+
+    }
+}
+
+.card {
+    width: 70%;
+    background-color: #fdfffa;
+    
+    border-style: solid;
+    border-width: 1px;
+    /*border-radius: 10px;*/
+    box-shadow: 5px 5px 10px #52222e;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+.card-image {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+
+    /*border-radius: 10px;*/
+
+    align-self: center;
+}
+
+.card-text-area {
+    padding: 5px 5px;
+
+}
+.card-title {
+    font-weight: bold;
+}
+
+.card-descr {
+    padding: 10px 0;
+    font-size: small;
 }
 
 
