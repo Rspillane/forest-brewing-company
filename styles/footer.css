@@ -19,11 +19,15 @@
   
   /* Style the accordion panel. Note: hidden by default */
   .panel {
+    margin-left: 30px;
     padding: 0 18px;
-    background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+  }
+
+  .panel li {
+    padding: 10px 0 10px 0;
   }
 
   .accordion:after {
@@ -31,15 +35,35 @@
     font-size: 13px;
     color: #777;
     float: right;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
 
+.panel-row {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.panel li:hover {
+  color: red;
+}
+
+.panel-row:hover {
+  color: red;
+}
+/* ------- WEBPAGE FORMATING ---------*/
+/* WEB ONLY FORMAT */
+@media screen and (min-width: 700px) {
+     
+}
+
 
 /* --------------- FOOTER ----------------- */
+
 .footer-links {
     padding: 25px 0 25px 0px;
     display: flex;

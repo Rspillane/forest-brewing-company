@@ -1,0 +1,54 @@
+#cta {
+    margin-inline: 20%;
+    padding-bottom: 100px;
+
+}
+
+.cta-intro {
+    text-align: center;
+}
+
+.cta-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Styling for text input on cta*/
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: background-color 0.3s ease;
+
+    box-shadow: 2px 2px 1px #52222e;
+  }
+  
+  /* Hover effect */
+  input[type="text"]:hover {
+    background-color: #e8e8e8;
+  }
+  
+  /* Focus effect */
+  input[type="text"]:focus {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Disabled state */
+  input[type="text"]:disabled {
+    background-color: #f2f2f2;
+    color: #777;
+    cursor: not-allowed;
+  }
+
+.button.cta-btn {
+    border-radius: 0 10px 10px 0;
+    font-size: 14px;
+}

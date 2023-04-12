@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" type="text/css" href="./styles/button.css" />
     <title>Document</title>
 </head>
 
@@ -42,17 +41,12 @@
             </li>
           </ul>
         </div>
-      </section>
+  </section>
 
   <section class="hero">
     <div id="hero-image">
       <img src="https://images.unsplash.com/photo-1559526642-c3f001ea68ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80" class="hero-background-image" alt="...">
     </div>
-    <!--<div class="hero-title">
-      <h1>Forest Brewering House</h1>
-      <h3>Discover the tasty of leafy Warwickshire local brews</h3>
-      <button type="button" class="btn btn-light">Shop Now</button>
-    </div>-->
   </section>
 
   <br>
@@ -88,10 +82,10 @@
         <img src="./images/beerbottle.png" class="card-img" alt="...">
         <div class="card-content">
           <div class="card-tags">
+            <p class="card-tag">4.0% Alcohol</p>
             <p class="card-tag vegan-tag">vegan</p>
-            <p class="card-tag alcfree-tag">0% Alcohol</p>
           </div>
-          <h5 class="card-title">Leamington Lime Lager</h5>
+          <h5 class="card-title">Alcester Amber Ale</h5>
           <p class="card-price">from £4.99</p>
           <button class="button card-btn">Buy Now</button>
         </div>
@@ -115,32 +109,57 @@
     </div>
   </section>
 
-      <section class="cta">
-        <p>If you like what you see, join our newsletter for special offers and new product launches</p>
-        <form>
-          <input type="text" id="email" name="email">
-          <button class="button"> Sign up </button>
-        </form>
-      </section>
+  <section id="cta">
+    <p class="cta-intro">If you like what you see, join our newsletter for special offers and new product launches</p>
+    <form class="cta-form">
+      <input type="text" id="email" name="email">
+      <br>
+      <button class="button cta-btn"> Sign up </button>
+    </form>
+  </section>
 
   <br>
 
   <footer id="footer">
     <div id="accordian-container">
-      <button class="accordion">About</button>
+      <button class="accordion">Information</button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <ul class="footer-info-list">
+          <li>
+              <a href="https://puritybrewing.com/careers/">Careers</a>
+          </li>
+          <li>
+              <a href="/delivery">Returns &amp; Delivery</a>
+          </li>
+          <li>
+              <a href="/terms-and-conditions/">T's &amp; C's</a>
+          </li>
+          <li>
+              <a href="/privacy/">Privacy Policy</a>
+          </li>
+          <li>
+              <a href="/contact-us/">Contact Us</a>
+          </li>
+        </ul>
       </div>
 
       <button class="accordion">Contact Us</button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <div class="panel-row">
+          <span class="material-symbols-outlined">
+            call
+            </span>
+          <p>01926 513XXX</p>
+        </div>
+        <div class="panel-row">
+          <span class="material-symbols-outlined">
+            alternate_email
+            </span>
+          <p>info@forestbrewing.com</p>
+        </div>
       </div>
+    
 
-      <button class="accordion">Section 3</button>
-      <div class="panel">
-        <p>Lorem ipsum...</p>
-      </div>
     </div>  
 
     <div class="footer-links">

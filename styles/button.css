@@ -1,6 +1,5 @@
 /* Button Container */
 
-
 .button {
     display: inline-flex;
     align-items: center;
@@ -14,5 +13,14 @@
     transition: background-color 0.3s ease;
     background-color: #fc5e09; /* Primary color */
     color: #ffffff; /* Text color */
-  }
+    box-shadow: 2px 2px 1px #52222e;
+
+    font-size: 12px;
+    font-family: "DIN Condensed",sans-serif;
+}
+
+.button:active {
+    box-shadow: 1px 1px 1px #52222e;
+    transform: translate(2px, 2px);
+}
   

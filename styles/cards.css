@@ -1,13 +1,19 @@
 /* ------------------- ITEM CARDS ----------------*/
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 10%;
+
+}
 
 .card {
-    width: 70%;
+    width: 250px;
     background-color: #fdfffa;
     
     border-style: solid;
     border-color: #fcfbfd;
     border-width: 1px;
-    /*border-radius: 10px;*/
     box-shadow: 5px 5px 1px #52222e;
 
     display: flex;
@@ -21,17 +27,6 @@
 }
 
 
-/*.card-image {
-    height: 150px;
-    width: 100%;
-    object-fit: cover;
-    background-repeat:no-repeat;
-    background-position: center center;
-
-    /*border-radius: 10px;*/
-    /*align-self: center;
-}*/
-
 .card-img {
     position: absolute;
     width: 200px;
@@ -42,7 +37,7 @@
 
 .card-img:hover {
     position: absolute;
-    transform: translate(0, -220px);
+    transform: translate(0, -225px);
 }
 
 .card-content {
@@ -104,46 +99,22 @@
     justify-content: center;
 }
 
-.card-btn {
-    
-    box-shadow: 2px 2px 1px #52222e;
-}
 
-.card-btn:active {
-    box-shadow: 1px 1px 1px #52222e;
-    transform: translate(2px, 2px);
-}
-
-/* MOBILE ONLY FORMAT */
-@media screen and (max-width: 500px) {
-    .card-container {
-        padding-block: 30px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 30px;
-    }
-
-}
 
 /* WEB ONLY FORMAT */
 @media screen and (min-width: 500px) {
      
-    #hero-image {      
-    background: url('Brewery1.jpg');
-    }
-    
     .card-container {
-        padding: 30px;
+        padding-top: 30px;
         column-gap: 20px;
 
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .card {
-        width: 220px;
+        width: 250px;
 
     }
 }

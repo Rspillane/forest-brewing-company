@@ -3,6 +3,8 @@
     margin: 50px;
 }
 
+
+
 .hero {
     position: relative;
 }
@@ -27,4 +29,13 @@
     width: 150px;
     margin-top: 10px;
     align-self: center;
+}
+
+/* WEB ONLY FORMAT */
+@media screen and (min-width: 700px) {
+     
+    #hero-image {      
+    background: url('Brewery1.jpg');
+    }/* I need to move this over to the hero.css file*/
+    
 }

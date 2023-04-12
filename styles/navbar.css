@@ -21,9 +21,12 @@
 }
 
 #menu {
-
     direction: rtl;
 
+}
+
+#menu:hover {
+    cursor: pointer;
 }
 
 

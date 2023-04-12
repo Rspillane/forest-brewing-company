@@ -3,9 +3,9 @@
 @import "./styles/hero.css";
 @import "./styles/intro.css";
 @import "./styles/cards.css";
+@import "./styles/cta.css";
 @import "./styles/footer.css";
-
-
+@import ".styles/button.css";
 
 /*------------------------  GLOBALS -----------------*/
 body {
@@ -26,4 +26,7 @@ button {
     all: unset;
     cursor: pointer;
   }
+  
+
+
   
