@@ -1,0 +1,149 @@
+/* ------------------- ITEM CARDS ----------------*/
+
+.card {
+    width: 70%;
+    background-color: #fdfffa;
+    
+    border-style: solid;
+    border-color: #fcfbfd;
+    border-width: 1px;
+    /*border-radius: 10px;*/
+    box-shadow: 5px 5px 1px #52222e;
+
+    display: flex;
+    flex-direction: column;
+    padding: 100px 10px 20px 10px;
+    margin: 100px 0px;
+
+    align-items: center;
+
+    font-family: "DIN Condensed",sans-serif;
+}
+
+
+/*.card-image {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+
+    /*border-radius: 10px;*/
+    /*align-self: center;
+}*/
+
+.card-img {
+    position: absolute;
+    width: 200px;
+    transform: translate(0, -235px);
+    transition: transform .2s; /* Animation */
+}
+
+
+.card-img:hover {
+    position: absolute;
+    transform: translate(0, -220px);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card-price {
+    font-size: 12px;
+}
+
+.card-text-area {
+    padding: 5px 5px;
+
+}
+.card-title {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "DIN Condensed",sans-serif;
+}
+
+.card-tags {
+    display: flex;
+    column-gap: 10px;
+}
+
+.card-tag{
+    font-size: 12px;
+    border-style: solid;
+    border-width: 0px;
+    padding: 3px 5px;
+    color: white;
+    background-color: rgb(27, 26, 26);
+
+    box-shadow: 2px 2px 1px #52222e;
+}
+
+.vegan-tag {
+    background-color: #98c573;
+}
+
+.alcfree-tag{
+    background-color: #52b7c4;
+}
+
+.glutenfree-tag {
+    background-color: #a7ddd1;
+}
+
+.card-descr {
+    padding: 10px 0;
+    font-size: small;
+}
+
+.card-price {
+    display: flex;
+    justify-content: center;
+}
+
+.card-btn {
+    
+    box-shadow: 2px 2px 1px #52222e;
+}
+
+.card-btn:active {
+    box-shadow: 1px 1px 1px #52222e;
+    transform: translate(2px, 2px);
+}
+
+/* MOBILE ONLY FORMAT */
+@media screen and (max-width: 500px) {
+    .card-container {
+        padding-block: 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+}
+
+/* WEB ONLY FORMAT */
+@media screen and (min-width: 500px) {
+     
+    #hero-image {      
+    background: url('Brewery1.jpg');
+    }
+    
+    .card-container {
+        padding: 30px;
+        column-gap: 20px;
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 220px;
+
+    }
+}

@@ -1,0 +1,30 @@
+/* ------------------- INTRO ----------------*/
+
+#brand-banner{
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+}
+#hero-brand {
+    width: 300px;
+}
+
+.intro {
+    margin-inline: 50px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.cta {
+    margin-inline: 20%;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+}
+
+.intro-container {
+    width: 500px;
+}

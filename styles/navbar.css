@@ -1,0 +1,46 @@
+/* ----------------- NAVBAR --------------------*/
+#nav-logo {
+    margin-left: -25px;
+    height: 60px;
+}
+
+.navigation {
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.navbar-top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+#menu {
+
+    direction: rtl;
+
+}
+
+
+.nav-item {
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.navbar-collapse {
+    height: auto;
+}
+
+.open {
+    height: 0;
+    display: none;
+}
+
+.navbar-brand {
+    width: 90%;
+}

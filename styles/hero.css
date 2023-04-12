@@ -1,0 +1,30 @@
+/*-------------------------- HERO ---------------------*/
+.shop {
+    margin: 50px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-background-image {
+    width: 100%;
+    /*transform: translateX(-18%);*/
+}
+
+.hero-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-inline: 20%;
+    transform: translateY(-250px);
+    color: white;
+    display: none;
+}
+
+.hero button {
+    width: 150px;
+    margin-top: 10px;
+    align-self: center;
+}
