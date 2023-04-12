@@ -1,12 +1,3 @@
-/* ------------------ IMPORT SECTION STYLESHEETS -----------------*/
-@import "./styles/navbar.css";
-@import "./styles/hero.css";
-@import "./styles/intro.css";
-@import "./styles/cards.css";
-@import "./styles/cta.css";
-@import "./styles/footer.css";
-@import ".styles/button.css";
-
 /*------------------------  GLOBALS -----------------*/
 body {
     margin: 0;
@@ -25,8 +16,413 @@ ul {
 button {
     all: unset;
     cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    background-color: #fc5e09; /* Primary color */
+    color: #ffffff; /* Text color */
+    box-shadow: 2px 2px 1px #52222e;
+
+    font-family: "DIN Condensed",sans-serif;
+  }
+
+  button:active {
+    box-shadow: 1px 1px 1px #52222e;
+    transform: translate(2px, 2px);
+}
+
+/* ----------------- NAVBAR --------------------*/
+#nav-logo {
+    margin-left: -25px;
+    height: 60px;
+}
+
+.navigation {
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.navbar-top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+#menu {
+    direction: rtl;
+
+}
+
+#menu:hover {
+    cursor: pointer;
+}
+
+
+.nav-item {
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.navbar-collapse li:hover {
+    color: red;
+  }
+
+.navbar-collapse {
+    height: auto;
+}
+
+.open {
+    height: 0;
+    display: none;
+}
+
+.navbar-brand {
+    width: 90%;
+}
+
+/*-------------------------- HERO ---------------------*/
+.hero {
+    position: relative;
+}
+
+.hero-mobile-image {
+    width: 100%;
+    /*transform: translateX(-18%);*/
+}
+
+.hero-web-image {
+    display: none;
+}
+
+.hero-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-inline: 20%;
+    transform: translateY(-250px);
+    color: white;
+    display: none;
+}
+
+.hero button {
+    width: 150px;
+    margin-top: 10px;
+    align-self: center;
+}
+
+/* WEB ONLY FORMAT */
+@media screen and (min-width: 700px) {
+     
+    .hero-mobile-image {      
+    display: none;
+    }/* I need to move this over to the hero.css file*/
+    
+   .hero-web-image {
+    display: block;
+    width: 100%
+   } 
+}
+
+/* ------------------- INTRO ----------------*/
+
+#brand-banner{
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+}
+#hero-brand {
+    width: 300px;
+}
+
+.intro {
+    margin-inline: 50px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+}
+
+.intro-container {
+    width: 500px;
+}
+/* ------------------- ITEM CARDS ----------------*/
+#shop {
+    margin-top: 100px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 10%;
+
+}
+
+.card {
+    width: 250px;
+    background-color: #fdfffa;
+    
+    border-style: solid;
+    border-color: #fcfbfd;
+    border-width: 1px;
+    box-shadow: 5px 5px 1px #52222e;
+
+    display: flex;
+    flex-direction: column;
+    padding: 100px 10px 20px 10px;
+    margin: 100px 0px;
+
+    align-items: center;
+
+    font-family: "DIN Condensed",sans-serif;
+}
+
+
+.card-img {
+    position: absolute;
+    width: 200px;
+    transform: translate(0, -235px);
+    transition: transform .2s; /* Animation */
+}
+
+
+.card-img:hover {
+    position: absolute;
+    transform: translate(0, -225px);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card-price {
+    font-size: 12px;
+}
+
+.card-text-area {
+    padding: 5px 5px;
+
+}
+.card-title {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "DIN Condensed",sans-serif;
+}
+
+.card-tags {
+    display: flex;
+    column-gap: 10px;
+}
+
+.card-tag{
+    font-size: 12px;
+    border-style: solid;
+    border-width: 0px;
+    padding: 3px 5px;
+    color: white;
+    background-color: rgb(27, 26, 26);
+
+    box-shadow: 2px 2px 1px #52222e;
+}
+
+.vegan-tag {
+    background-color: #98c573;
+}
+
+.alcfree-tag{
+    background-color: #52b7c4;
+}
+
+.glutenfree-tag {
+    background-color: #a7ddd1;
+}
+
+.card-descr {
+    padding: 10px 0;
+    font-size: small;
+}
+
+.card-price {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* WEB ONLY FORMAT */
+@media screen and (min-width: 500px) {
+     
+    .card-container {
+        padding-top: 30px;
+        column-gap: 20px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 250px;
+
+    }
+}
+
+#cta {
+    margin-inline: 20%;
+    padding-bottom: 100px;
+
+}
+
+.cta-intro {
+    text-align: center;
+}
+
+.cta-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Styling for text input on cta*/
+input[type="text"] {
+    flex-grow: 2;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: background-color 0.3s ease;
+
+    box-shadow: 2px 2px 1px #52222e;
   }
   
-
-
+  /* Hover effect */
+  input[type="text"]:hover {
+    background-color: #e8e8e8;
+  }
   
+  /* Focus effect */
+  input[type="text"]:focus {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Disabled state */
+  input[type="text"]:disabled {
+    background-color: #f2f2f2;
+    color: #777;
+    cursor: not-allowed;
+  }
+
+.button.cta-btn {
+    border-radius: 0 10px 10px 0;
+    white-space: nowrap;
+    border: solid 1px black;
+    font-size: 16px;
+
+    font-family: "DIN Condensed",sans-serif;
+}
+
+/* ---------------- ACCORDION ------------------ */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+button.accordion {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+
+    background-color: #eee;
+    padding: 0 18px 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .panel li {
+    padding: 10px 0 10px 0;
+  }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 10px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+.panel-row {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.panel li:hover {
+  color: red;
+}
+
+.panel-row:hover {
+  color: red;
+}
+/* ------- WEBPAGE FORMATING ---------*/
+/* WEB ONLY FORMAT */
+@media screen and (min-width: 700px) {
+     
+}
+
+
+/* --------------- FOOTER ----------------- */
+
+.footer-links {
+
+    background-color: #eee;
+    padding: 25px 0 25px 0px;
+    display: flex;
+    justify-content: space-around;
+}
