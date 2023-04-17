@@ -17,11 +17,18 @@ for (i = 0; i < acc.length; i++) {
 
 //Navbar scripts
 const navbar = document.getElementById('navbar-menu-items');
-
+const span = document.getElementsByClassName('material-symbols-outlined')[0];
 
 const expandNavbar = () => {
     navbar.classList.toggle('open');
     console.log('menu should open');
+
+    if(navbar.classList.contains('open')){
+      span.innerHTML = 'menu';
+    } else {
+      span.innerHTML = 'close';
+    }
+
 }
 
 const navbarMenu = document.getElementById('menu');

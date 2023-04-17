@@ -44,7 +44,7 @@ button {
     height: 35px;
 }
 
-.navigation {
+#navigation {
     padding: 10px;
     height: auto;
     display: flex;
@@ -135,7 +135,7 @@ button {
 }
 
 /*-------------------------- HERO ---------------------*/
-.hero {
+#hero {
     position: relative;
 }
 
@@ -190,13 +190,11 @@ button {
     width: 300px;
 }
 
-.intro {
+#intro {
     margin-inline: 50px;
     text-align: center;
     font-size: 16px;
-}
 
-.intro {
     display: flex;
     justify-content: center;
 }
