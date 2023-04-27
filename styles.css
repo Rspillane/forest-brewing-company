@@ -63,7 +63,6 @@ button {
 #menu {
     direction: rtl;
     margin-left: 50px;
-
 }
 
 #menu:hover {
@@ -83,6 +82,14 @@ button {
 .navbar-collapse {
     height: auto;
 }
+
+.material-symbols-outlined {
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+  }
+  
+.material-symbols-outlined.active {
+    transform: rotate(270deg); /* Apply the rotation */
+  }
 
 .open {
     height: 0;
@@ -126,6 +133,7 @@ button {
         display: inline;
         padding-top: 5px;
         padding-bottom: 5px;
+        padding-left: 1rem
 
     }
 
@@ -165,16 +173,24 @@ button {
     align-self: center;
 }
 
+#hero-brand {
+    width: 300px;
+    margin-top: 25px;
+}
+
 /* WEB ONLY FORMAT */
 @media screen and (min-width: 700px) {
      
     .hero-mobile-image {      
     display: none;
-    }/* I need to move this over to the hero.css file*/
+    }
     
    .hero-web-image {
     display: block;
-    width: 100%
+    background-image: url("https://images.unsplash.com/photo-1555658636-6e4a36218be7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    height: 500px;
+    width: 100%;
    } 
 }
 
@@ -186,9 +202,7 @@ button {
     justify-content: center;
 }
 
-#hero-brand {
-    width: 300px;
-}
+
 
 #intro {
     margin-inline: 50px;
@@ -387,6 +401,10 @@ input[type="text"] {
     font-family: "DIN Condensed",sans-serif;
 }
 
+.email-submit {
+    color: green;
+}
+
 /* ---------------- ACCORDION ------------------ */
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -408,7 +426,7 @@ button.accordion {
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
+  .accordion:hover {
     background-color: #ccc;
   }
   
@@ -429,14 +447,14 @@ button.accordion {
   .accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
-    color: #777;
+    /*color: #777;*/
     float: right;
     margin-left: 10px;
   }
   
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
+  /* .active:after {
+    content: "\2796";
+  } */
 
 .panel-row {
   display: flex;

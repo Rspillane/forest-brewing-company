@@ -19,14 +19,16 @@ for (i = 0; i < acc.length; i++) {
 const navbar = document.getElementById('navbar-menu-items');
 const span = document.getElementsByClassName('material-symbols-outlined')[0];
 
+
 const expandNavbar = () => {
     navbar.classList.toggle('open');
     console.log('menu should open');
+    span.classList.toggle('active');
 
-    if(navbar.classList.contains('open')){
-      span.innerHTML = 'menu';
-    } else {
+    if(span.classList.contains('active')){
       span.innerHTML = 'close';
+    } else {
+      span.innerHTML = 'menu';
     }
 
 }
@@ -34,3 +36,26 @@ const expandNavbar = () => {
 const navbarMenu = document.getElementById('menu');
 
 navbarMenu.addEventListener('click', expandNavbar);
+
+
+//cta script
+const ctaEmail = document.getElementsByClassName('cta-email-input')[0];
+const ctaForm = document.getElementsByClassName('cta-form')[0];
+
+const submitEmail = () => {
+  const emailResult = document.createElement('div');
+  emailResult.classList.add('email-submit');
+
+  ctaEmail.removeChild(ctaForm);
+
+  emailResult.innerHTML = 'Thanks for joining our list!';
+
+  ctaEmail.appendChild(emailResult);
+  //if email contains @ then succesful submit
+  //confirmation message pops up
+
+  //Timer if i want it in the future
+  /*setTimeout(function() {
+    ctaEmail.removeChild(emailResult);
+  }, 3000);*/
+}
