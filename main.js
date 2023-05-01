@@ -41,21 +41,29 @@ navbarMenu.addEventListener('click', expandNavbar);
 //cta script
 const ctaEmail = document.getElementsByClassName('cta-email-input')[0];
 const ctaForm = document.getElementsByClassName('cta-form')[0];
+const userEmail = document.getElementById('email');
 
 const submitEmail = () => {
   const emailResult = document.createElement('div');
+
   emailResult.classList.add('email-submit');
 
-  ctaEmail.removeChild(ctaForm);
-
-  emailResult.innerHTML = 'Thanks for joining our list!';
-
+  if(userEmail.value.includes('@')){
+    emailResult.classList.add('email-submit-valid');
+    emailResult.innerHTML = 'Thanks for joining our list!';
+    console.log('valid emaild');
+    
+  }  else {
+    emailResult.classList.add('email-submit-invalid');
+    emailResult.innerHTML = 'Please enter a valid email address';
+    console.log('invalid email')
+    
+  }
+  
   ctaEmail.appendChild(emailResult);
-  //if email contains @ then succesful submit
-  //confirmation message pops up
 
   //Timer if i want it in the future
-  /*setTimeout(function() {
+  setTimeout(function() {
     ctaEmail.removeChild(emailResult);
-  }, 3000);*/
+  }, 3000);
 }
