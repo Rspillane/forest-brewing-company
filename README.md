@@ -12,7 +12,8 @@
 
 
 TODO: Add a screenshot of the live project.
-1. Link to a 'live demo.'
+
+https://rspillane.github.io/forest-brewing-company/
 
 A response single page website developed for a fictional brewery based in rural Warwickshire. Website is dynamically reponsive for both mobile and desktop, with the functionality of a simple shopping basket.
 
