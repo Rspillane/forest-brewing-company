@@ -148,6 +148,11 @@ button {
 }
 
 .hero-mobile-image {
+    display: block;
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
+    url("https://images.unsplash.com/photo-1559526642-c3f001ea68ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80") no-repeat;
+    background-size: cover;
+    height: 500px;
     width: 100%;
     /*transform: translateX(-18%);*/
 }
@@ -162,9 +167,8 @@ button {
     flex-direction: column;
     justify-content: center;
     margin-inline: 20%;
-    transform: translateY(-250px);
+    transform: translateY(-350px);
     color: white;
-    display: none;
 }
 
 .hero button {
@@ -173,10 +177,12 @@ button {
     align-self: center;
 }
 
-#hero-brand {
+/* #hero-brand {
+    position: absolute;
+    transform: translate(100px, -350px);
     width: 300px;
     margin-top: 25px;
-}
+} */
 
 /* WEB ONLY FORMAT */
 @media screen and (min-width: 700px) {
@@ -187,7 +193,8 @@ button {
     
    .hero-web-image {
     display: block;
-    background-image: url("https://images.unsplash.com/photo-1555658636-6e4a36218be7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60))
+    , url("https://images.unsplash.com/photo-1555658636-6e4a36218be7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat;
     background-size: cover;
     height: 500px;
     width: 100%;
@@ -216,6 +223,7 @@ button {
 .intro-container {
     width: 500px;
 }
+
 /* ------------------- ITEM CARDS ----------------*/
 #shop {
     margin-top: 100px;
