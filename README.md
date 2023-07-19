@@ -4,30 +4,28 @@
 
 - [Overview](#overview)
 - [Built With](#built-with)
-- [Features](#features)
+- [Learning Outcomes](#learning-outcomes)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
 ## Overview
 
+
 TODO: Add a screenshot of the live project.
 1. Link to a 'live demo.'
-2. Describe your overall experience in a couple of sentences.
-3. List a few specific technical things that you learned or improved on.
-4. Share any other tips or guidance for others attempting this or something similar.
 
-### Built With
+A response single page website developed for a fictional brewery based in rural Warwickshire. Website is dynamically reponsive for both mobile and desktop, with the functionality of a simple shopping basket.
+
+## Built With
 
  - HTML
  - CSS
  - JavaScript
 
-## Features
-
-TODO: List what specific 'user problems' that this application solves.
-Possibly the shopping bag is a feature to include in this section
-Advertisment space for their products
-Information about their business
+## Learning Outcomes
+I found I spent more time and effort, designing the aesthetics and trying to get good quality assets to use on the page. 
+Making the website responsive to different screensizes, encourage me to read more into css @mediaqueries and css units such as fr.
+If I were to do a similar project in the future, I follow the style of another website I like the look of more closely. To learn more about good design, whilst also focusing on the code side of things.
 
 ## Contact
 
