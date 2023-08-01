@@ -256,9 +256,10 @@ button {
     font-family: "DIN Condensed",sans-serif;
 }
 
-
-.card-img {
+.card-img-link{
     position: absolute;
+}
+.card-img {
     width: 200px;
     transform: translate(0, -235px);
     transition: transform .2s; /* Animation */
@@ -266,7 +267,6 @@ button {
 
 
 .card-img:hover {
-    position: absolute;
     transform: translate(0, -225px);
 }
 
@@ -505,4 +505,31 @@ button.accordion {
     padding: 25px 0 25px 0px;
     display: flex;
     justify-content: space-around;
+}
+
+/* --------------- ITEM SHOP PAGE -------------- */
+
+.item-area{
+    margin: 50px;
+    padding: 25px;
+    gap: 10px;
+    border: solid;
+    border-radius: 10px;
+
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+}
+
+.item-image {
+    display: flex;
+    align-self: center;
+}
+
+#item-carousel {
+    display: flex;
+    gap: 50px;
+    margin: 100px 50px;
+    flex-direction: row;
 }
