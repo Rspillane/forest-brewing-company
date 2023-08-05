@@ -248,7 +248,7 @@ button {
 
     display: flex;
     flex-direction: column;
-    padding: 100px 10px 20px 10px;
+    padding: 0px 10px 20px 10px;
     margin: 100px 0px;
 
     align-items: center;
@@ -257,17 +257,32 @@ button {
 }
 
 .card-img-link{
-    position: absolute;
+    position: relative;
 }
 .card-img {
     width: 200px;
-    transform: translate(0, -235px);
-    transition: transform .2s; /* Animation */
 }
 
 
 .card-img:hover {
-    transform: translate(0, -225px);
+        /* transform: translate(0, 0px); */
+        animation-name: bounce;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+        /* transition: bounce .2s; Animation */
+    }
+    
+    @keyframes bounce {
+        0% {
+        }
+    
+        50% {
+            transform: translate(0, -25px);
+        }
+    
+        100% {
+            transform: translate(0, -15px);
+        }
 }
 
 .card-content {
@@ -509,27 +524,80 @@ button.accordion {
 
 /* --------------- ITEM SHOP PAGE -------------- */
 
-.item-area{
-    margin: 50px;
+
+/* MOBILE */
+.item-area {
+    display: flex;
+    flex-direction: column;
+
     padding: 25px;
     gap: 10px;
-    border: solid;
-    border-radius: 10px;
 
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-
-    display: flex;
+    font-family: "DIN Condensed",sans-serif;
 }
 
 .item-image {
     display: flex;
     align-self: center;
+    scale: 0.75;
 }
 
-#item-carousel {
+.info-details{
+    padding: 12px;
+    
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#shop-item-carousel {
+    display: flex;
+    overflow:auto;
+    white-space: nowrap;
     gap: 50px;
-    margin: 100px 50px;
+    padding-inline: 50px;
+}
+
+
+/* BROWSER */
+
+@media screen and (min-width: 700px) {
+    .item-area{
+        margin: 50px;
+        padding: 25px;
+        gap: 10px;
+        border: solid;
+    
+    
+        background-color: white;
+        border-color: black;
+        border-width: 1px;
+        box-shadow: 5px 5px 1px #52222e;
+    
+        display: flex;
+        flex-direction: row;
+        font-family: "DIN Condensed",sans-serif;
+    }
+    
+    
+    #item-carousel {
+        display: flex;
+        justify-content: space-around;
+        gap: 50px;
+        margin: 100px 50px;
+        flex-direction: row;
+    }
+
+}
+
+
+
+/* --------- BREADCRUMBS ---------- */
+
+#breadcrumbs {
+    margin-left: 25px;
+    gap: 5px;
+    display: flex;
     flex-direction: row;
+    align-items: center;
 }
